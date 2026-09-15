@@ -223,62 +223,44 @@ mjx-container[display="true"] + br {
 <main class="page-container" id="swup">
 
 	
-	
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="https://images.elecannonic.com/global/background_light.png" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="https://images.elecannonic.com/global/background_dark.png" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
+	<style>
+    .home-article-item,
+    .profile-card,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        opacity: 0.3;
+    }
+    .profile-card {
+        background-color: var(--background-color-transparent) !important;
+        backdrop-filter: blur(12px);
+    }
+</style>
 
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            Build real science.
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-    </div>
-    <script>
-        const scrollToMain = ()=> {
-            console.log('scroll');
-            const target = document.querySelector('.main-content-container');
-            target.scrollIntoView({ behavior: 'smooth'});
-        }
-    </script>
+<div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+    <img src="https://images.elecannonic.com/global/background_light.png" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+    <img src="https://images.elecannonic.com/global/background_dark.png" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
 </div>
+
 	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
@@ -650,7 +632,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">Kategorien</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/de/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">15</div>
         <div class="label text-third-text-color text-sm">Beiträgen</div>
     </a>
 </div>
@@ -688,7 +670,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">Kategorien</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/de/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">15</div>
         <div class="label text-third-text-color text-sm">Beiträgen</div>
     </a>
 </div>
@@ -702,577 +684,95 @@ mjx-container[display="true"] + br {
 
 			<div class="main-content">
 				<div class="home-content-container">
-    <ul class="home-article-list">
+    
+    <section class="home-profile-section" aria-labelledby="profile-heading-0">
+        <h2 id="profile-heading-0">Über Mich</h2>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/elektronik/stormverwaltung/">
-                            Verwaltung und Anwendung von Stromversorgungen
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.
-Lizenzinformationen:
-
-Titel: Schleifenanalyse - Mit TIA-Beispiel
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategor...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jun 12 2026 00:00:00 GMT+0800">
-                
-                    2026-06-12
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/elektronik/">elektronik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/elektronik/stormverwaltung/">Weiterlesen<span class="seo-reader-text">Verwaltung und Anwendung von Stromversorgungen</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+        <div class="profile-intro"><p>Derzeit studiere ich Physik im Bachelorstudiengang an der Shanghai Jiao Tong University (SJTU). Meine Forschungsinteressen liegen jedoch in den Bereichen anwendungsspezifische integrierte Schaltkreise (ASICs), eingebettete Systeme sowie hochpräzise Signalauslesesysteme.</p>
+<p>Derzeit arbeite ich im Labor für „Präzisionselektronik unter extremen Bedingungen“ (AEEE) der Fakultät für Physik der Shanghai Jiao Tong University und beschäftige mich mit der Erforschung elektronischer Systeme, die für anspruchsvolle Messumgebungen geeignet sind. Ab 2027 werde ich mein Doktoratsstudium aufnehmen und mich weiterhin auf den Entwurf analoger integrierter Schaltungen konzentrieren.</p>
 </div>
-
+        
+        
+    </section>
+    
+    <section class="home-profile-section" aria-labelledby="profile-heading-1">
+        <h2 id="profile-heading-1">Forschungsinteressen</h2>
+        
+        
+        <div class="profile-card-grid">
+            
+            <article class="profile-card profile-interest-card">
+                
+                <i class="fa-solid fa-microchip profile-interest-icon" aria-hidden="true"></i>
+                
+                
+                <h3>Analoge integrierte Schaltungen</h3>
+                <div class="profile-card-description"><p>Entwurf von Analogchips und Untersuchungen auf Schaltungsebene.</p>
+</div>
+                
+            </article>
+            
+            <article class="profile-card profile-interest-card">
+                
+                <i class="fa-solid fa-code profile-interest-icon" aria-hidden="true"></i>
+                
+                
+                <h3>Embedded-Systeme</h3>
+                <div class="profile-card-description"><p>Ich widme mich der Entwicklung zuverlässiger Embedded-Plattformen.</p>
+</div>
+                
+            </article>
+            
+            <article class="profile-card profile-interest-card">
+                
+                <i class="fa-solid fa-wave-square profile-interest-icon" aria-hidden="true"></i>
+                
+                
+                <h3>Hochpräzises elektronisches Auslesesystem</h3>
+                <div class="profile-card-description"><p>Entwicklung eines hochpräzisen Datenerfassungssystems.</p>
+</div>
+                
+            </article>
+            
+        </div>
+        
+    </section>
+    
+    <section class="home-profile-section" aria-labelledby="profile-heading-2">
+        <h2 id="profile-heading-2">Bildungsweg</h2>
+        
+        
+        <div class="profile-card-grid">
+            
+            <article class="profile-card">
+                
+                
+                <img class="sjtu-badge" src="https://vi.sjtu.edu.cn/img/base/Logo.png" alt="上海交通大学" />
+                <div>
+                
+                <h3>B.Sc. in Physik</h3>
+                <div class="profile-card-description"><p>Shanghai Jiao Tong Universität <span>2023.08 – 2027.06</span></p>
+</div>
                 </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/elektronik/schleifen/">
-                            Schleifenanalyse - Mit TIA-Beispiel
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.
-Lizenzinformationen:
-
-Titel: Schleifenanalyse - Mit TIA-Beispiel
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategor...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Jan 22 2026 00:00:00 GMT+0800">
-                
-                    2026-01-22
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
+            </article>
+            
+            <article class="profile-card">
                 
                 
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/elektronik/">elektronik</a>&nbsp;
-                        </li>
-                    
-                    
+                <img class="sjtu-badge" src="https://vi.sjtu.edu.cn/img/base/Logo.png" alt="上海交通大学" />
+                <div>
                 
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/elektronik/schleifen/">Weiterlesen<span class="seo-reader-text">Schleifenanalyse - Mit TIA-Beispiel</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+                <h3>Ph.D. in Physik</h3>
+                <div class="profile-card-description"><p>Shanghai Jiao Tong Universität <span>2027.09 – </span></p>
+<p><small>Zulassung bestätigt</small></p>
 </div>
-
                 </div>
-            </li>
+            </article>
+            
+        </div>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/loesungen/kein/">
-                            Nichts ist hier
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Leider gibt es hier nichts.
-
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Oct 19 2025 00:00:00 GMT+0800">
-                
-                    2025-10-19
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/loesungen/">loesungen</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/loesungen/kein/">Weiterlesen<span class="seo-reader-text">Nichts ist hier</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/mathematik/tensoralgebra/">
-                            Tensoralgebra
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:  
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.  
-Lizenzinformationen:
-
-Titel: Tensoralgebra
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategorie/mathematik/tens...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Oct 16 2025 00:00:00 GMT+0800">
-                
-                    2025-10-16
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/mathematik/">mathematik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/mathematik/tensoralgebra/">Weiterlesen<span class="seo-reader-text">Tensoralgebra</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/elektronik/analoge_integrierte/">
-                            Analoge integrierte Schaltungen
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.
-Lizenzinformationen:
-
-Titel: Analoge integrierte Schaltungen
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategorie/e...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Sep 16 2025 00:00:00 GMT+0800">
-                
-                    2025-09-16
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/elektronik/">elektronik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/elektronik/analoge_integrierte/">Weiterlesen<span class="seo-reader-text">Analoge integrierte Schaltungen</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/physik/elektro/">
-                            Elektrodynamik
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:  
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.  
-Lizenzinformationen:
-
-Titel: Elektrodynamik
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategorie/physik/elektro...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Sep 15 2025 00:00:00 GMT+0800">
-                
-                    2025-09-15
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/physik/">physik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/physik/elektro/">Weiterlesen<span class="seo-reader-text">Elektrodynamik</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/elektronik/e203_lesen/">
-                            Lassen Sie uns gemeinsam die hbird_e203 CPU lesen
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Copyright-Hinweis:  
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.  
-Lizenzinformationen:
-
-Titel: Lassen Sie uns gemeinsam die hbird_e203 CPU lesen
-Autor: EleCannonic
-Link: https://elecanno...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Sep 09 2025 00:00:00 GMT+0800">
-                
-                    2025-09-09
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/elektronik/">elektronik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/elektronik/e203_lesen/">Weiterlesen<span class="seo-reader-text">Lassen Sie uns gemeinsam die hbird_e203 CPU lesen</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/physik/quanten/">
-                            Quantenmechanik
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Urheberrechtshinweis:
-Dieser Artikel ist unter CC BY-NC-SA 4.0 lizenziert.
-Lizenzinformationen:
-
-Titel: Quantenmechanik
-Autor: EleCannonic
-Link: https://elecannonic.com/de/kategorie/physik/quanten...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Jul 29 2025 00:00:00 GMT+0800">
-                
-                    2025-07-29
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/physik/">physik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/physik/quanten/">Weiterlesen<span class="seo-reader-text">Quantenmechanik</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/de/kategorie/physik/thermo/">
-                            Thermodynamik and Statistical Mechanik
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-Urheberrechtshinweis:
-Dieser Artikel ist lizenziert unter CC BY-NC-SA 4.0.
-Lizenzinformationen:
-
-Titel: Thermodynamik und Statistische Mechanik
-Autor: EleCannonic
-Link: https://elecannonic.com/cat...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Jun 21 2025 00:00:00 GMT+0800">
-                
-                    2025-06-21
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/de/kategorie/physik/">physik</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/de/kategorie/physik/thermo/">Weiterlesen<span class="seo-reader-text">Thermodynamik and Statistical Mechanik</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-	<span class="page-number current">1</span>
-</div>
-  
-    </div>
+    </section>
+    
 </div>
 
 			</div>
@@ -1346,7 +846,7 @@ Link: https://elecannonic.com/cat...
 
 	
 
-	<div class="right-side-tools-container">
+	<div class="right-side-tools-container home-tools-persistent">
 		<div class="side-tools-container">
 	<ul class="hidden-tools-list">
 		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
@@ -1357,9 +857,7 @@ Link: https://elecannonic.com/cat...
 			<i class="fa-regular fa-magnifying-glass-minus"></i>
 		</li>
 
-		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-			<i class="fa-regular fa-moon"></i>
-		</li>
+		
 
 		<!-- rss -->
 		
@@ -1372,6 +870,13 @@ Link: https://elecannonic.com/cat...
 	</ul>
 
 	<ul class="visible-tools-list">
+		
+		<li>
+			<button type="button" class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+				<i class="fa-regular fa-moon" aria-hidden="true"></i>
+			</button>
+		</li>
+		
 		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
 			<i class="fa-regular fa-cog fa-spin"></i>
 		</li>
@@ -1384,6 +889,7 @@ Link: https://elecannonic.com/cat...
 		
 	</ul>
 </div>
+
 	</div>
 
 	<div class="image-viewer-container">
@@ -1439,7 +945,9 @@ Link: https://elecannonic.com/cat...
 
 
 
-	<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/imageViewer.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/utils.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/main.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/navbarShrink.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/scrollTopBottom.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/lightDarkSwitch.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/categoryList.js" ></script>
+
+	<script src="/de/js/tools/blogrollCopy.js" defer></script>
+<script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/imageViewer.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/utils.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/main.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/navbarShrink.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/scrollTopBottom.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/lightDarkSwitch.js" ></script><script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/categoryList.js" ></script>
 
 
     <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/tools/localSearch.js" ></script>
@@ -1479,6 +987,7 @@ Link: https://elecannonic.com/cat...
 
 <script  src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/libs/moment-with-locales.min.js" data-swup-reload-script></script>
 <script type="module" src="https://evan.beee.top/projects/hexo-theme-redefine@2.8.2/source/js/build/layouts/essays.js" data-swup-reload-script></script>
+
 
 
 
